@@ -33,6 +33,18 @@
             color: white;
         }
 
+        .logo-container {
+            width: 120px;        /* ajuste o tamanho */
+            height: 120px;
+            margin: 0 auto 20px auto;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; 
+        }
+
         .login-container h2 {
             font-size: 22px;
             margin-bottom: 25px;
@@ -96,6 +108,10 @@
 
 <body>
     <div class="login-container">
+
+       <div class="logo-container">
+            <img src="logotela.jpg" alt="Logo">
+        </div>
         <h2>USER LOGIN</h2>
 
         <div class="input-field">
@@ -103,11 +119,6 @@
         </div>
           <div class="input-field">
               <input type="password" placeholder="PASSWORD">
-          </div>
-
-          <div class="options">
-              <label><input type="checkbox"> Remember Me</label>
-              <a href="#">Forgot Password?</a>
           </div>
 
         <button class="login-btn">LOGIN</button>
